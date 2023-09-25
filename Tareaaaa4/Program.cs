@@ -10,6 +10,8 @@ namespace Tareaaaa4
     {
         static void Main(string[] args)
         {
+            ArmasRanged Arco = new ArmasRanged("Flecha", 10, "Arco", 20, 25, 500);
+            Console.WriteLine($"Arco.GetNombre");
 
         }
     }

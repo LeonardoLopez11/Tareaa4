@@ -18,7 +18,11 @@ namespace Tareaaaa4
             this.Nombre = nombre;
             this.Daño = daño;
             this.VelocidadAtaque = velocidadAtaque;
-            Precio = precio;
+            this.Precio = precio;
+        }
+        public Armas()
+        {
+
         }
 
         public float CalcularDPS(int Daño, float VelocidadAtaque)
@@ -43,7 +47,24 @@ namespace Tareaaaa4
         {
             return Precio;
         }
-        //putoelquelea
+        public void SetNombre(string Nombre)
+        {
+            this.Nombre = Nombre;
+        }
+        public void SetDaño(int Daño)
+        {
+            this.Daño = Daño;
+        }
+        public void SetVelocidadAtaque(float VelocidadAtaque)
+        {
+            this.VelocidadAtaque = VelocidadAtaque;
+        }
+        public void SetPrecio(float Precio)
+        {
+            this.Precio = Precio;
+        }
+
+
 
 
     }
