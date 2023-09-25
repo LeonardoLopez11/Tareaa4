@@ -10,6 +10,7 @@ namespace Tareaaaa4
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
