@@ -43,8 +43,4 @@ namespace Tareaaaa4
         {
             return Precio;
         }
-
-
-
-    }
 }
