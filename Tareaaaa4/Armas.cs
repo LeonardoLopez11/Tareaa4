@@ -8,10 +8,10 @@ namespace Tareaaaa4
 {
     class Armas
     {
-        private string Nombre;
-        private int Daño;
-        private float VelocidadAtaque;
-        private float Precio;
+        protected string Nombre;
+        protected int Daño;
+        protected float VelocidadAtaque;
+        protected float Precio;
 
         public Armas(string nombre, int daño, float velocidadAtaque, float precio)
         {
@@ -20,9 +20,11 @@ namespace Tareaaaa4
             this.VelocidadAtaque = velocidadAtaque;
             this.Precio = precio;
         }
-        public Armas()
-        {
 
+        
+        public override string ToString()
+        {
+            return "Nombre: " + Nombre + ", Daño: "+ Daño + " Velocidadataque: " + VelocidadAtaque + " Precio: "+ Precio;
         }
 
         public float CalcularDPS(int Daño, float VelocidadAtaque)
@@ -47,22 +49,7 @@ namespace Tareaaaa4
         {
             return Precio;
         }
-        public void SetNombre(string Nombre)
-        {
-            this.Nombre = Nombre;
-        }
-        public void SetDaño(int Daño)
-        {
-            this.Daño = Daño;
-        }
-        public void SetVelocidadAtaque(float VelocidadAtaque)
-        {
-            this.VelocidadAtaque = VelocidadAtaque;
-        }
-        public void SetPrecio(float Precio)
-        {
-            this.Precio = Precio;
-        }
+        
 
 
 

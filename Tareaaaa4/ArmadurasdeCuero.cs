@@ -8,9 +8,9 @@ namespace Tareaaaa4
 {
     class ArmadurasdeCuero
     {
-        private string Nombre;
-        private float ReducciondeDaño;
-        private float Durabilidad;
+        protected string Nombre;
+        protected float ReducciondeDaño;
+        protected float Durabilidad;
 
         public ArmadurasdeCuero(string nombre, float reducciondeDaño, float durabilidad)
         {
@@ -18,6 +18,12 @@ namespace Tareaaaa4
             this.ReducciondeDaño = reducciondeDaño;
             this.Durabilidad = durabilidad;
         }
+
+        public override string ToString()
+        {
+            return "Nombre: " + Nombre + ", Reduccion de Daño: " + ReducciondeDaño + " Durabilidad: " + Durabilidad;
+        }
+
 
         public string GetNombre()
         {
@@ -31,11 +37,8 @@ namespace Tareaaaa4
         {
             return Durabilidad;
         }
-        public ArmadurasdeCuero()
-        {
-
-        }
-
+        
+        
 
 
 

@@ -7,20 +7,21 @@ using System.Threading.Tasks;
 namespace Tareaaaa4
 {
     class ArmadurasdeMetal : ArmadurasdeCuero
-
-       
-
     {
-        private float reducciondeDaño = 
-
-
-
+        
         public ArmadurasdeMetal(string nombre, float reducciondeDaño, float durabilidad) : base(nombre, reducciondeDaño, durabilidad)
         {
-            Nombre = nombre;
-            ReducciondeDaño = reducciondeDaño;
-            Durabilidad = durabilidad;
+            this.Nombre = nombre;
+            this.ReducciondeDaño = reducciondeDaño * 2;
+            this.Durabilidad = durabilidad;
         }
+        public override string ToString()
+        {
+            return "Nombre: " + Nombre + ", Reduccion de Daño: " + ReducciondeDaño + " Durabilidad: " + Durabilidad;
+        }
+
+
+
 
 
 
