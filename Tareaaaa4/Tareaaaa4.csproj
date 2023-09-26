@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArmadurasdeCuero.cs" />
+    <Compile Include="ArmadurasdeMetal.cs" />
     <Compile Include="Armas.cs" />
     <Compile Include="ArmasRanged.cs" />
     <Compile Include="Program.cs" />
